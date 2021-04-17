@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 border rounded p-4 ">
+            <h2 class="pb-3 text-pet-primary">Edit Pet</h2>
+
+            <form method="POST">
+                
+                    {% include '_pet_form.html' %}
+
+                <div class="mt-3">
+                    <button class="btn btn-primary w-100 p-3">Update</button>
+                    <!-- <a href="/" class="btn btn-secondary ">Go Back</a> -->
+                </div>
+            </form>
+
+
+
+        </div>
+        <!--End of Column 2-->
+
+    </div>
+    <!--End of Row-->
+
+</div>
+<!--End of Container-->
+
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{{ form.hidden_tag() }}
+<div class="mb-3  pb-3 border-bottom">
+    {{ form.name.label(class_="form-label") }}
+    {{ form.name(class_="form-control") }}
+    <small class="form-text text-danger">
+        {{ form.name.errors[0] }}
+    </small>
+</div>
+<div class="mb-3  pb-3 border-bottom">
+    {{ form.species.label(class_="form-label") }}
+    {{ form.species(class_="form-select mb-3") }}
+    <small class="form-text text-danger">
+        {{ form.species.errors[0] }}
+    </small>
+</div>
+<div class="mb-3 pb-3 border-bottom">
+    {{ form.age.label(class_="form-label") }}
+    {{ form.age(class_="form-control") }}
+    <small class="form-text text-danger">
+        {{ form.age.errors[0] }}
+    </small>
+</div>
+<div class="mb-3 pb-3 border-bottom">
+    {{ form.photo_url.label(class_="form-label") }}
+    {{ form.photo_url(class_="form-control") }}
+    <small class="form-text text-danger">
+        {{ form.photo_url.errors[0] }}
+    </small>
+</div>
+<div class="mb-3  pb-3 border-bottom">
+    {{ form.available(class_="form-check-input") }}
+    {{ form.available.label(class_="form-check-label") }}
+
+</div>
+<div class="mb-3  pb-3 border-bottom">
+    {{ form.notes.label(class_="form-label") }}
+    {{ form.notes(class_="form-control") }}
+
+</div>
